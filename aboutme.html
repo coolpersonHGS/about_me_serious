@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap if it was extra cool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .image-container{
+            height: 200px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="data:image/jpeg;base64,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" alt = "MyBrand Logo" width="40" height="40" class="d-inline-block align-text-top">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigations">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                                   <li class="nav-item">
+                        <a class="nav-link active" href="opinions.html">random thoughts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="favshows.html">Favorite Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="personaldislikes.html">General Dislikes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactme.html">Contact me!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+   </nav>
+   
+    <!-- hero section-->
+   <div class="text-center text-black py-5" style="background-color: rgb(0, 162, 255);">
+        <h1> The Epic webpage that's about me</h1>
+        <br>
+        <p> I learned how to make a b̶a̶s̶i̶c̶ awesome and advanced landing page in Bootstrap!</p>
+        <!-- button made by students-->
+         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Hello!
+         </button>
+   </div>
+
+   <!-- cards section-->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4rfmuY0RX5gFUBdIc3-Z-_JReHnHk09shVw&s" class="card-img-top image-container" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-center">About me</h5>
+                        <p class="card-text text-center"> My name is Kingston. I'm 14 years old and I'm about to start high school<br> Im generally a pretty nice person, I like making jokes that aren't at the expense of others. <br> I consider myself to be a kind person, and I hope it stays that way.</p>
+                        <!-- blank button -->
+                         
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-md-4">
+                           <div class="card">
+                    <img src="https://i.redd.it/xxodzo30yoab1.gif" class="card-img-top image-container" alt="...">
+                    <div class="card-body">
+                                 <h5 class="card-title text-center">My hobbies</h5>
+                        <p class="card-text text-center"> I like programming in c++. I have been c++ programming for about 6 months(but not really). <br> I plan on making games using c++, and so far I've made some pretty cool things. I don't really have that many hobbies.</p>
+                        <!-- blank button -->
+                            
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://t4.ftcdn.net/jpg/02/89/47/79/360_F_289477945_ScrXM4xCwjBKSCceqQEhcO2pwagcI3Va.jpg" class="card-img-top image-container" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">My likes</h5>
+                        <p class="card-text text-center"> Im a huge fan of playing games, typically fighting games. I also enjoy conversing with others about casual topics, such as what's generally going on <br> I also consider myself an enjoyer of challenges.</p>
+                        <!-- blank button -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- modal-->
+<div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">My Webpage</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p> Welcome to my webpage! It's about me!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> close </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+
+<footer>
+
+    <h6 style="color: gray; background-color: rgba(165, 42, 42, 0.393); text-align: center; ;" > cool information found in footer. its pretty cool </p>
+        <nav style="padding: 50px;">
+            <a href="https://en.wikipedia.org/wiki/Morning_star_(weapon)"  style= "background-color: rgba(90, 34, 34, 0.393); text-align: center; ;"> favorite medieval weapon</a>
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Construction_paper"  style= "background-color: rgba(116, 190, 195, 0.393); text-align: center; ;"> favorite paper type</a>
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Mob_Psycho_100"  style= "background-color: rgba(223, 134, 134, 0.062); text-align: center; ;"> favorite (and arguably best) anime</a>
+        </nav>
+
+
+</footer>
+</html>
